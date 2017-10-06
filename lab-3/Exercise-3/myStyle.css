@@ -1,0 +1,26 @@
+h1
+{
+    color: orange;
+}
+h1:hover
+{
+    background-color: red;
+}
+a
+{
+    color: red;
+}
+a.special
+{
+    color: white;
+}
+p
+{
+    color: blue;
+    background-color: orange;
+    font-size: 22pt;
+}
+body
+{
+        background: url(kusama.jpg);
+}

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript"
+                 src="formChecker.js">
+         </script>
+         <form name="form" onsubmit="return validate()" action="customerBackend.php" method="post">
+             <b>Enter your username<br/>
+             <input type="text" name="username" value=""/>
+             <b><br/>
+             <b>Enter your password<br/>
+             <input type="password" name="password" value=""/>
+             <br/>
+             <b>How many A's would you like? (A's are $1)<br/>
+             <input type="text" name="A" value=""/>
+             <b><br/>
+             <b>How many B's would you like? (B's are $2)<br/>
+             <input type="text" name="B" value=""/>
+             <b><br/>
+             <b>How many C's would you like? (C's are $3)<br/>
+             <input type="text" name="C" value=""/>
+             <br/>
+             What kind of shipping would you like?<br>
+             <input type="radio" name="shipping" value="free">Free 7 day<br>
+             <input type="radio" name="shipping" value="overnight">$50.00 overnight<br>
+             <input type="radio" name="shipping" value="three-day">$5.00 three day<br>
+
+             <button type="submit">Submit</button>
+             <button type="reset">Reset</button>
+         </form>
+
+
+    </head>
+</html>
