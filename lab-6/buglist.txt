@@ -1,0 +1,12 @@
+Methods that do not appear to function correctly:
+
+removeBack()
+removeFront()
+isEmpty()
+
+My speculation is that there is an error in the way that isEmpty() is implemented.
+It appears to be throwing true on all inputs. I would guess that both removeBack()
+and removeFront() are implemented correctly, but rely on the (broken) isEmpty() to
+decide whether or not to remove elements from the list. Because isEmpty() always 
+returns true, the removal methods will refuse to remove elements as they are 
+incorrectly guarding against the list being empty.
